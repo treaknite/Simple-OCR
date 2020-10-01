@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "221994529189",
+    "firebase_url": "https://summarization-c8dc6.firebaseio.com",
+    "project_id": "summarization-c8dc6",
+    "storage_bucket": "summarization-c8dc6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:221994529189:android:c96946f3ba13ad0cc1b84c",
+        "android_client_info": {
+          "package_name": "com.example.summarization"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "221994529189-h224lotj8sra20ka9l0tuj75jvhple1j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSY0Lq7rW3j5RgwepMbnnX5-C-tndTt0g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "221994529189-h224lotj8sra20ka9l0tuj75jvhple1j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
