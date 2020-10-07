@@ -14,14 +14,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:src="@drawable/ocr_img"/>
+        android:src="@drawable/ic_ocr"/>
 
     <com.example.summarization.typeface.TextViewHelveticaBold
         android:id="@+id/tv_ocr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/ocr"
-        android:textSize="@dimen/font_22sp"
+        android:textSize="@dimen/text_size_22sp"
         android:textColor="@color/colorGrey"
         app:layout_constraintTop_toBottomOf="@id/iv_ocr_img"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +32,7 @@
         android:layout_width="@dimen/dimen_0dp"
         android:layout_height="wrap_content"
         android:text="@string/ocr_caption"
-        android:textSize="@dimen/font_14sp"
+        android:textSize="@dimen/text_size_14sp"
         android:textColor="@color/colorGrey"
         android:gravity="center"
         android:layout_marginTop="@dimen/dimen_15dp"
@@ -51,7 +51,7 @@
         android:layout_marginTop="@dimen/dimen_10dp"
         android:layout_marginBottom="@dimen/dimen_20dp"
         android:gravity="center"
-        android:textSize="@dimen/font_14sp"
+        android:textSize="@dimen/text_size_14sp"
         app:layout_constraintBottom_toTopOf="@id/ll_skip"
         app:layout_constraintStart_toStartOf="@id/tv_ocr_caption"
         app:layout_constraintEnd_toEndOf="@id/tv_ocr_caption"/>
@@ -65,7 +65,7 @@
         android:padding="@dimen/dimen_11dp"
         android:layout_marginBottom="@dimen/dimen_30dp"
         android:gravity="center"
-        android:textSize="@dimen/font_14sp"
+        android:textSize="@dimen/text_size_14sp"
         app:layout_constraintStart_toStartOf="@id/ll_next"
         app:layout_constraintEnd_toEndOf="@id/ll_next"
         app:layout_constraintBottom_toBottomOf="parent"/>

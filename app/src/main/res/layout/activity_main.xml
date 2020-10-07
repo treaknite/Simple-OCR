@@ -9,7 +9,7 @@
 
     <ImageView
         android:visibility="gone"
-        android:id="@+id/imgView"
+        android:id="@+id/iv_selected_img"
         android:layout_marginTop="@dimen/dimen_20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,21 +20,21 @@
 
     <com.example.summarization.typeface.TextViewHelveticaBold
         android:visibility="gone"
-        android:id="@+id/tv_imgdetails"
+        android:id="@+id/tv_img_details"
         android:text="@string/image_details"
         android:padding="@dimen/dimen_10dp"
-        android:textSize="@dimen/font_18sp"
+        android:textSize="@dimen/text_size_18sp"
         android:layout_width="@dimen/dimen_0dp"
         android:gravity="center"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/imgView"
-        app:layout_constraintStart_toStartOf="@id/imgView"
-        app:layout_constraintEnd_toEndOf="@id/imgView"/>
+        app:layout_constraintTop_toBottomOf="@id/iv_selected_img"
+        app:layout_constraintStart_toStartOf="@id/iv_selected_img"
+        app:layout_constraintEnd_toEndOf="@id/iv_selected_img"/>
 
     <ScrollView
         android:visibility="gone"
         android:id="@+id/scrollView"
-        app:layout_constraintTop_toBottomOf="@+id/tv_imgdetails"
+        app:layout_constraintTop_toBottomOf="@+id/tv_img_details"
         app:layout_constraintBottom_toTopOf="@id/view"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,8 +46,8 @@
         android:background="@color/colorWhite">
 
         <com.example.summarization.typeface.TextViewHelveticaMedium
-            android:id="@+id/tvText"
-            android:textSize="@dimen/font_15sp"
+            android:id="@+id/tv_converted_text"
+            android:textSize="@dimen/text_size_15sp"
             android:padding="@dimen/dimen_10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
@@ -55,7 +55,7 @@
     </ScrollView>
 
         <LinearLayout
-            android:id="@+id/ll_empty_message"
+            android:id="@+id/ll_noselect_message"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -70,7 +70,7 @@
             android:orientation="vertical">
 
         <ImageView
-            android:src="@drawable/image_icon"
+            android:src="@drawable/ic_image_placeholder"
             android:layout_gravity="center"
             android:id="@+id/iv_placeholder"
             android:layout_width="@dimen/dimen_150dp"
@@ -78,11 +78,11 @@
             android:contentDescription="@string/app_name" />
 
         <com.example.summarization.typeface.TextViewHelveticaMedium
-            android:id="@+id/tv_placeholdercaption"
+            android:id="@+id/tv_placeholder_caption"
             android:text="@string/select_img_cation"
             android:padding="@dimen/dimen_10dp"
             android:textColor="@color/colorGrey"
-            android:textSize="@dimen/font_14sp"
+            android:textSize="@dimen/text_size_14sp"
             android:layout_width="match_parent"
             android:gravity="center"
             android:layout_height="wrap_content"
@@ -103,7 +103,7 @@
         app:layout_constraintTop_toTopOf="parent"/>
 
     <RelativeLayout
-        android:id="@+id/rl_selectImg"
+        android:id="@+id/rl_select_img"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -116,15 +116,15 @@
         <ImageView
             android:layout_width="@dimen/dimen_25dp"
             android:layout_height="@dimen/dimen_25dp"
-            android:src="@drawable/icon_plus"/>
+            android:src="@drawable/ic_plus"/>
     </RelativeLayout>
 
     <View
         android:id="@+id/view"
         android:layout_width="@dimen/dimen_0dp"
         android:layout_height="@dimen/dimen_1dp"
-        app:layout_constraintTop_toTopOf="@id/rl_selectImg"
-        app:layout_constraintBottom_toBottomOf="@id/rl_selectImg"
+        app:layout_constraintTop_toTopOf="@id/rl_select_img"
+        app:layout_constraintBottom_toBottomOf="@id/rl_select_img"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 

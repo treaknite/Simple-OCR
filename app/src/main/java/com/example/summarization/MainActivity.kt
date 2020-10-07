@@ -8,15 +8,11 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.util.Log
 import android.view.View
-import android.widget.ImageView
-import android.widget.ProgressBar
-import android.widget.TextView
 import android.widget.Toast
 import com.github.dhaval2404.imagepicker.ImagePicker
 import com.google.mlkit.vision.common.InputImage
 import com.google.mlkit.vision.text.TextRecognition
 import kotlinx.android.synthetic.main.activity_main.*
-import java.io.File
 import java.io.IOException
 
 class MainActivity : AppCompatActivity() {
@@ -34,7 +30,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun setListener(){
-        rl_selectImg.setOnClickListener {
+        rl_select_img.setOnClickListener {
             openImagePicker()
         }
     }
@@ -55,7 +51,7 @@ class MainActivity : AppCompatActivity() {
             //Image Uri will not be null for RESULT_OK
             val fileUri = data?.data
             Log.d(TAG, "onActivityResult: fileUri:"+ fileUri)
-            imgView.setImageURI(fileUri)
+            iv_selected_img.setImageURI(fileUri)
 
             if(fileUri != null) {
                 processImage(fileUri)
@@ -68,7 +64,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
     private fun processImage(fileUri: Uri){
-        tvText.text = ""
+        tv_converted_text.text = ""
         progressBar.visibility = View.VISIBLE
         try {
             image = InputImage.fromFilePath(this, fileUri)
@@ -85,13 +81,13 @@ class MainActivity : AppCompatActivity() {
                     if(TextUtils.isEmpty(resultText)){
                         progressBar.visibility = View.GONE
                         // show message
-                        tvText.text = resources.getString(R.string.no_text_found)
+                        tv_converted_text.text = resources.getString(R.string.no_text_found)
                     }
                     else
                     {
                         progressBar.visibility = View.GONE
                         // set TextView
-                        tvText.text=resultText
+                        tv_converted_text.text=resultText
                     }
 
 
@@ -107,9 +103,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun setViewVisibility(){
-        imgView.visibility = View.VISIBLE
-        tv_imgdetails.visibility = View.VISIBLE
+        iv_selected_img.visibility = View.VISIBLE
+        tv_img_details.visibility = View.VISIBLE
         scrollView.visibility = View.VISIBLE
-        ll_empty_message.visibility = View.GONE
+        ll_noselect_message.visibility = View.GONE
     }
 }
