@@ -14,6 +14,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/white_filled_cornered_edge"
         android:layout_width="@dimen/dimen_300dp"
         android:layout_height="@dimen/dimen_220dp"
         android:contentDescription="@string/app_name" />
@@ -43,7 +44,7 @@
         android:layout_marginTop="@dimen/dimen_10dp"
         android:layout_marginStart="@dimen/dimen_15dp"
         android:layout_marginEnd="@dimen/dimen_15dp"
-        android:background="@color/colorWhite">
+        android:background="@drawable/white_filled_cornered_edge">
 
         <com.example.summarization.typeface.TextViewHelveticaMedium
             android:id="@+id/tv_converted_text"
@@ -63,7 +64,7 @@
             android:layout_marginEnd="@dimen/dimen_30dp"
             android:layout_marginStart="@dimen/dimen_30dp"
             android:layout_marginTop="@dimen/dimen_30dp"
-            android:background="@color/colorWhite"
+            android:background="@drawable/white_filled_cornered_edge"
             android:layout_width="match_parent"
             android:gravity="center"
             android:layout_height="@dimen/dimen_0dp"
@@ -73,8 +74,8 @@
             android:src="@drawable/ic_image_placeholder"
             android:layout_gravity="center"
             android:id="@+id/iv_placeholder"
-            android:layout_width="@dimen/dimen_150dp"
-            android:layout_height="@dimen/dimen_150dp"
+            android:layout_width="@dimen/dimen_100dp"
+            android:layout_height="@dimen/dimen_100dp"
             android:contentDescription="@string/app_name" />
 
         <com.example.summarization.typeface.TextViewHelveticaMedium
