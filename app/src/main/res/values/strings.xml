@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Summarization</string>
+    <string name="app_name">Simple OCR</string>
     <string name="image_details">Image Details</string>
 
     <string name="select_img_cation">Click or Select an image to quickly extract the text from the image.</string>
